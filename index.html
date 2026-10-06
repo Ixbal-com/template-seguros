@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO: título y descripción que aparecen en Google -->
+  <title>Rodrigo Garza · Asesor de seguros en Monterrey</title>
+  <meta name="description" content="Asesor de seguros independiente en Monterrey: comparo seguros de auto, gastos médicos, vida y hogar en 8 aseguradoras y te acompaño en cada siniestro. Cotiza gratis por WhatsApp.">
+  <meta name="theme-color" content="#c2410c">
+
+  <!-- Vista previa al compartir en WhatsApp y redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rodrigo Garza · Asesor de seguros independiente">
+  <meta property="og:description" content="Comparo tu seguro en 8 aseguradoras y te explico la letra chiquita. Auto, gastos médicos, vida y hogar en Monterrey.">
+  <meta property="og:image" content="assets/img/og-image.svg">
+  <meta property="og:locale" content="es_MX">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800&family=Red+Hat+Text:wght@400;500;700&display=swap">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="module" src="assets/js/main.js"></script>
+
+  <!-- Datos estructurados para Google Maps y búsquedas locales -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InsuranceAgency",
+    "name": "Rodrigo Garza · Asesor de seguros",
+    "description": "Asesor de seguros independiente: auto, gastos médicos mayores, vida y hogar con varias aseguradoras.",
+    "telephone": "+52 81 1934 5620",
+    "email": "rodrigo@garzaseguros.mx",
+    "priceRange": "$$",
+    "areaServed": "Área metropolitana de Monterrey",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Lázaro Cárdenas 2400, piso 7, Valle Oriente",
+      "addressLocality": "San Pedro Garza García",
+      "addressRegion": "Nuevo León",
+      "postalCode": "66269",
+      "addressCountry": "MX"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ ENCABEZADO ============ -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Rodrigo Garza, ir al inicio">
+        <img class="brand__logo" src="assets/img/logo.svg" alt="" width="44" height="44">
+        <span class="brand__name">Rodrigo Garza <span class="brand__role">Asesor de seguros</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" data-nav-toggle>
+        <span class="visually-hidden">Abrir menú</span>
+        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#menu"></use></svg>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Principal" data-nav>
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#seguros">Seguros</a></li>
+          <li><a class="site-nav__link" href="#comparativa">Cómo comparo</a></li>
+          <li><a class="site-nav__link" href="#siniestros">Siniestros</a></li>
+          <li><a class="site-nav__link" href="#renovacion">Renovación</a></li>
+          <li><a class="site-nav__link" href="#sobre-mi">Sobre mí</a></li>
+        </ul>
+        <a class="button button--primary" href="#cotizar">Cotizar gratis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="status-badge" data-open-status data-text-open="Te contesto ahora · hasta las {close}" data-text-closed="Fuera de horario · siniestros las 24 horas" hidden></p>
+          <h1 class="hero__title">Comparo tu seguro en 8 aseguradoras <span>y te explico la letra chiquita.</span></h1>
+          <p class="hero__lead">Soy Rodrigo Garza, asesor de seguros independiente en Monterrey. No trabajo para una aseguradora: trabajo para ti, antes de contratar y, sobre todo, el día que necesitas usar tu seguro.</p>
+
+          <p class="hero__pick-label" id="hero-elige">¿Qué quieres proteger?</p>
+          <ul class="hero__picks" aria-labelledby="hero-elige">
+            <li><a class="pick" href="#cotizar"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#car"></use></svg> Auto</a></li>
+            <li><a class="pick" href="#cotizar"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#stethoscope"></use></svg> Gastos médicos</a></li>
+            <li><a class="pick" href="#cotizar"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#family"></use></svg> Vida</a></li>
+            <li><a class="pick" href="#cotizar"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#home"></use></svg> Hogar</a></li>
+          </ul>
+
+          <div class="hero__actions">
+            <a class="button button--primary button--lg" href="#cotizar">
+              Cotizar en 2 minutos
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#arrow-right"></use></svg>
+            </a>
+            <a class="button button--outline button--lg" href="tel:+528119345620" data-contact="phone">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#phone"></use></svg>
+              ¿Un choque? Llámame
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <figure class="media media--portrait hero__photo" data-slot="hero">
+            <img src="images/hero.jpg" alt="Rodrigo Garza, asesor de seguros, en su oficina con el Cerro de la Silla de fondo" width="1024" height="1536" fetchpriority="high">
+          </figure>
+          <p class="hero__license">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#shield"></use></svg>
+            <span><strong>Agente autorizado</strong> Cédula CNSF A-123456</span>
+          </p>
+        </div>
+      </div>
+
+      <ul class="container hero__facts">
+        <li><strong>15 años</strong> asesorando familias y negocios en Nuevo León</li>
+        <li><strong>8 aseguradoras</strong> comparadas en cada cotización</li>
+        <li><strong>24 horas</strong> o menos para mandarte tus opciones</li>
+        <li><strong>$0</strong> por cotizar y por acompañarte en un siniestro</li>
+      </ul>
+    </section>
+
+    <!-- ============ SEGUROS ============ -->
+    <section class="section" id="seguros" aria-labelledby="seguros-titulo">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Seguros</p>
+          <h2 class="section__title" id="seguros-titulo">Cuatro seguros, explicados sin rodeos</h2>
+          <p class="section__lead">Lo que cubre cada uno, para quién conviene y lo que nadie te dice al contratarlo.</p>
+        </header>
+
+        <ul class="products">
+          <li class="product">
+            <figure class="media product__photo" data-slot="seguro-auto">
+              <img src="images/seguro-auto.jpg" alt="Camioneta gris estacionada frente a una casa con las montañas de Monterrey al fondo" width="1536" height="1024" loading="lazy">
+            </figure>
+            <div class="product__body">
+              <h3 class="product__title"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#car"></use></svg> Auto</h3>
+              <p class="product__for">Particular, de plataforma (Uber, DiDi) o de trabajo.</p>
+              <ul class="product__list">
+                <li>Daños, robo y responsabilidad civil</li>
+                <li>Abogado y fianzas si hay un accidente</li>
+                <li>Gastos médicos de quienes van en el auto</li>
+              </ul>
+              <p class="product__tip"><strong>Ojo:</strong> si usas tu auto en plataforma y lo aseguras como particular, te pueden negar el pago.</p>
+            </div>
+          </li>
+          <li class="product">
+            <figure class="media product__photo" data-slot="seguro-gastos-medicos">
+              <img src="images/seguro-gastos-medicos.jpg" alt="Doctora platicando con una mamá y su hija en un consultorio de hospital" width="1536" height="1024" loading="lazy">
+            </figure>
+            <div class="product__body">
+              <h3 class="product__title"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#stethoscope"></use></svg> Gastos médicos mayores</h3>
+              <p class="product__for">Individual, para tu familia o para complementar el de tu empresa.</p>
+              <ul class="product__list">
+                <li>Hospital, cirugías, médicos y medicamentos</li>
+                <li>Pago directo en hospitales de la red</li>
+                <li>Cobertura en el extranjero, si la necesitas</li>
+              </ul>
+              <p class="product__tip"><strong>Ojo:</strong> algunos padecimientos tienen periodo de espera. Contrátalo antes de necesitarlo.</p>
+            </div>
+          </li>
+          <li class="product">
+            <figure class="media product__photo" data-slot="seguro-vida">
+              <img src="images/seguro-vida.jpg" alt="Familia caminando y riendo en el Parque Fundidora" width="1536" height="1024" loading="lazy">
+            </figure>
+            <div class="product__body">
+              <h3 class="product__title"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#heart"></use></svg> Vida</h3>
+              <p class="product__for">Si alguien depende de tu ingreso, o para ahorrar con un fin.</p>
+              <ul class="product__list">
+                <li>Protección para tu familia o tu hipoteca</li>
+                <li>Ahorro para el retiro o la universidad</li>
+                <li>Invalidez y enfermedades graves</li>
+              </ul>
+              <p class="product__tip"><strong>Ojo:</strong> entre más joven lo contratas, menos pagas durante toda la póliza.</p>
+            </div>
+          </li>
+          <li class="product">
+            <figure class="media product__photo" data-slot="seguro-hogar">
+              <img src="images/seguro-hogar.jpg" alt="Fachada de una casa moderna de dos pisos al atardecer en Monterrey" width="1536" height="1024" loading="lazy">
+            </figure>
+            <div class="product__body">
+              <h3 class="product__title"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#home"></use></svg> Hogar</h3>
+              <p class="product__for">Casa o departamento, propio o rentado.</p>
+              <ul class="product__list">
+                <li>Incendio, inundación y fenómenos naturales</li>
+                <li>Robo de tus cosas y daños a vecinos</li>
+                <li>Plomero, cerrajero y electricista de emergencia</li>
+              </ul>
+              <p class="product__tip"><strong>Ojo:</strong> si rentas, puedes asegurar solo tus cosas. Cuesta menos de lo que crees.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ COTIZAR ============ -->
+    <!--
+      Cotizador en tres pasos (assets/js/modules/wizard.js). El paso 2 cambia según el tipo de
+      seguro: cada grupo lleva data-wizard-if="tipo=…" y solo se ve (y se envía) el que coincide.
+      El mensaje de WhatsApp sale de data-message: cada {campo} es el name de un campo, y una línea
+      cuyos campos quedan vacíos (los de otro tipo de seguro) no se envía.
+    -->
+    <section class="section quote-section" id="cotizar" aria-labelledby="cotizar-titulo">
+      <div class="container quote">
+        <div class="quote__intro">
+          <p class="eyebrow">Cotizar</p>
+          <h2 class="section__title" id="cotizar-titulo">Tu cotización, comparada y explicada</h2>
+          <p class="section__lead">Contesta tres preguntas. Me llegan por WhatsApp y te mando tus opciones en menos de 24 horas hábiles.</p>
+          <ol class="quote__steps">
+            <li><strong>Me cuentas</strong> qué quieres asegurar. Toma 2 minutos.</li>
+            <li><strong>Comparo</strong> en las 8 aseguradoras con las que trabajo.</li>
+            <li><strong>Te mando 3 opciones</strong> con lo que cubre cada una, en palabras claras.</li>
+          </ol>
+          <p class="quote__note">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#check"></use></svg>
+            Cotizar no te compromete a nada y pagas lo mismo que contratando directo con la aseguradora.
+          </p>
+        </div>
+
+        <form class="quote__card wizard form" data-wizard data-whatsapp-form data-message="Hola Rodrigo, soy {nombre} ({municipio}). Quiero cotizar un seguro de {tipo}.&#10;Auto: {auto_modelo} {auto_anio}, CP {auto_cp}, uso {auto_uso}, cobertura {auto_cobertura}.&#10;Gastos médicos: {gmm_quienes}, titular de {gmm_edad} años, seguro actual: {gmm_actual}.&#10;Vida: {vida_edad} años, fuma: {vida_fuma}, suma asegurada: {vida_suma}, para {vida_objetivo}.&#10;Hogar: {hogar_tipo} {hogar_propiedad}, valor aproximado {hogar_valor}, quiero asegurar {hogar_cobertura}.&#10;Prefiero que me contactes {contacto}.">
+          <div class="wizard__progress" data-wizard-nav hidden>
+            <span data-wizard-progress data-template="Paso {current} de {total}" aria-live="polite">Paso 1 de 3</span>
+            <span class="wizard__bar" data-wizard-bar></span>
+          </div>
+
+          <fieldset class="wizard__step" data-wizard-step data-wizard-auto>
+            <legend class="wizard__question">1. ¿Qué quieres asegurar?</legend>
+            <div class="options options--2 options--types">
+              <label class="option option--type"><input type="radio" name="tipo" value="auto" required><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#car"></use></svg> Mi auto</label>
+              <label class="option option--type"><input type="radio" name="tipo" value="gastos médicos mayores"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#stethoscope"></use></svg> Mi salud o la de mi familia</label>
+              <label class="option option--type"><input type="radio" name="tipo" value="vida"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#heart"></use></svg> Mi vida o mi ahorro</label>
+              <label class="option option--type"><input type="radio" name="tipo" value="hogar"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#home"></use></svg> Mi casa o departamento</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="wizard__step" data-wizard-step>
+            <legend class="wizard__question">2. Cuéntame un poco más</legend>
+
+            <div class="quote__group" data-wizard-if="tipo=auto">
+              <div class="form__row">
+                <div class="form__field">
+                  <label class="form__label" for="auto_modelo">Marca y modelo</label>
+                  <input class="form__control" id="auto_modelo" name="auto_modelo" type="text" placeholder="Ej. Mazda CX-30" required>
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="auto_anio">Año</label>
+                  <input class="form__control" id="auto_anio" name="auto_anio" type="number" inputmode="numeric" min="1990" max="2028" placeholder="Ej. 2023" required>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__field">
+                  <label class="form__label" for="auto_cp">Código postal donde duerme el auto</label>
+                  <input class="form__control" id="auto_cp" name="auto_cp" type="text" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Ej. 66220" required>
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="auto_uso">Uso</label>
+                  <select class="form__control" id="auto_uso" name="auto_uso" required>
+                    <option>particular</option>
+                    <option>de plataforma (Uber, DiDi)</option>
+                    <option>de trabajo o reparto</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="auto_cobertura">Cobertura</label>
+                <select class="form__control" id="auto_cobertura" name="auto_cobertura" required>
+                  <option>amplia (daños, robo y responsabilidad civil)</option>
+                  <option>limitada (robo y responsabilidad civil)</option>
+                  <option>solo responsabilidad civil</option>
+                  <option>no sé, recomiéndame</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="quote__group" data-wizard-if="tipo=gastos médicos mayores">
+              <div class="form__field">
+                <label class="form__label" for="gmm_quienes">¿A quiénes quieres asegurar?</label>
+                <select class="form__control" id="gmm_quienes" name="gmm_quienes" required>
+                  <option>solo a mí</option>
+                  <option>a mi pareja y a mí</option>
+                  <option>a mi familia con hijos</option>
+                  <option>a mis papás</option>
+                </select>
+              </div>
+              <div class="form__row">
+                <div class="form__field">
+                  <label class="form__label" for="gmm_edad">Edad del titular</label>
+                  <input class="form__control" id="gmm_edad" name="gmm_edad" type="number" inputmode="numeric" min="0" max="99" placeholder="Ej. 38" required>
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="gmm_actual">¿Ya tienes seguro?</label>
+                  <select class="form__control" id="gmm_actual" name="gmm_actual" required>
+                    <option>no</option>
+                    <option>sí, el de mi empresa</option>
+                    <option>sí, uno individual</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="quote__group" data-wizard-if="tipo=vida">
+              <div class="form__row">
+                <div class="form__field">
+                  <label class="form__label" for="vida_edad">Tu edad</label>
+                  <input class="form__control" id="vida_edad" name="vida_edad" type="number" inputmode="numeric" min="18" max="75" placeholder="Ej. 35" required>
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="vida_fuma">¿Fumas?</label>
+                  <select class="form__control" id="vida_fuma" name="vida_fuma" required>
+                    <option>no</option>
+                    <option>sí</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__field">
+                  <label class="form__label" for="vida_objetivo">¿Para qué lo quieres?</label>
+                  <select class="form__control" id="vida_objetivo" name="vida_objetivo" required>
+                    <option>proteger a mi familia</option>
+                    <option>ahorrar para mi retiro</option>
+                    <option>la universidad de mis hijos</option>
+                    <option>cubrir mi hipoteca o deudas</option>
+                  </select>
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="vida_suma">Suma asegurada</label>
+                  <select class="form__control" id="vida_suma" name="vida_suma" required>
+                    <option>no sé, recomiéndame</option>
+                    <option>$1 millón</option>
+                    <option>$2 millones</option>
+                    <option>$3 millones o más</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="quote__group" data-wizard-if="tipo=hogar">
+              <div class="form__row">
+                <div class="form__field">
+                  <label class="form__label" for="hogar_tipo">Es una</label>
+                  <select class="form__control" id="hogar_tipo" name="hogar_tipo" required>
+                    <option>casa</option>
+                    <option>departamento</option>
+                  </select>
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="hogar_propiedad">Y es</label>
+                  <select class="form__control" id="hogar_propiedad" name="hogar_propiedad" required>
+                    <option>propia</option>
+                    <option>rentada</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__field">
+                  <label class="form__label" for="hogar_valor">Valor aproximado</label>
+                  <select class="form__control" id="hogar_valor" name="hogar_valor" required>
+                    <option>menos de $2 millones</option>
+                    <option>de $2 a $5 millones</option>
+                    <option>más de $5 millones</option>
+                    <option>no sé</option>
+                  </select>
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="hogar_cobertura">Quiero asegurar</label>
+                  <select class="form__control" id="hogar_cobertura" name="hogar_cobertura" required>
+                    <option>la construcción y mis cosas</option>
+                    <option>solo mis cosas</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="wizard__step" data-wizard-step>
+            <legend class="wizard__question">3. ¿A quién le mando la cotización?</legend>
+            <div class="form__field">
+              <label class="form__label" for="nombre">Tu nombre</label>
+              <input class="form__control" id="nombre" name="nombre" type="text" autocomplete="name" required>
+            </div>
+            <div class="form__row">
+              <div class="form__field">
+                <label class="form__label" for="municipio">Municipio</label>
+                <select class="form__control" id="municipio" name="municipio" required>
+                  <option>Monterrey</option>
+                  <option>San Pedro Garza García</option>
+                  <option>San Nicolás de los Garza</option>
+                  <option>Guadalupe</option>
+                  <option>Apodaca</option>
+                  <option>Santa Catarina</option>
+                  <option>General Escobedo</option>
+                  <option>García</option>
+                  <option>otro municipio</option>
+                </select>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="contacto">¿Cómo te contacto?</label>
+                <select class="form__control" id="contacto" name="contacto" required>
+                  <option>por WhatsApp</option>
+                  <option>con una llamada en la mañana</option>
+                  <option>con una llamada en la tarde</option>
+                </select>
+              </div>
+            </div>
+            <button class="button button--whatsapp button--block button--lg" type="submit">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#whatsapp"></use></svg>
+              Enviar por WhatsApp
+            </button>
+            <p class="form__note">Se abrirá WhatsApp con tus respuestas listas para enviar. Este sitio no guarda tus datos; los precios finales los da cada aseguradora.</p>
+          </fieldset>
+
+          <div class="wizard__nav" data-wizard-nav hidden>
+            <button class="button button--ghost" type="button" data-wizard-back>← Atrás</button>
+            <button class="button button--primary" type="button" data-wizard-next>Siguiente →</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ COMPARATIVA ============ -->
+    <!-- Ejemplo de cómo presenta las opciones. La columna recomendada lleva .compare-table__pick. -->
+    <section class="section section--muted" id="comparativa" aria-labelledby="comparativa-titulo">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Cómo comparo</p>
+          <h2 class="section__title" id="comparativa-titulo">Así se ve una cotización conmigo</h2>
+          <p class="section__lead">No te mando un PDF de 20 páginas: te mando tres opciones lado a lado y te digo cuál elegiría yo y por qué.</p>
+        </header>
+
+        <div class="compare-table__wrap" role="region" aria-labelledby="comparativa-caption" tabindex="0">
+          <table class="compare-table">
+            <caption id="comparativa-caption">Ejemplo: Mazda CX-30 2023, uso particular, San Pedro Garza García, cobertura amplia</caption>
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col">Opción A <span>La más económica</span></th>
+                <th scope="col" class="compare-table__pick">Opción B <span>La que yo elegiría</span></th>
+                <th scope="col">Opción C <span>La más completa</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Pago anual</th>
+                <td>$14,200</td>
+                <td class="compare-table__pick"><strong>$16,900</strong></td>
+                <td>$21,500</td>
+              </tr>
+              <tr>
+                <th scope="row">Deducible por daños</th>
+                <td>5%</td>
+                <td class="compare-table__pick">5%</td>
+                <td>3%</td>
+              </tr>
+              <tr>
+                <th scope="row">Deducible por robo</th>
+                <td>10%</td>
+                <td class="compare-table__pick">10%</td>
+                <td>5%</td>
+              </tr>
+              <tr>
+                <th scope="row">Responsabilidad civil</th>
+                <td>$3 millones</td>
+                <td class="compare-table__pick">$4 millones</td>
+                <td>$5 millones</td>
+              </tr>
+              <tr>
+                <th scope="row">Reparación en agencia</th>
+                <td>Primer año</td>
+                <td class="compare-table__pick">Hasta 3 años</td>
+                <td>Hasta 5 años</td>
+              </tr>
+              <tr>
+                <th scope="row">Auto sustituto</th>
+                <td><svg class="icon compare-table__no" role="img" aria-label="No incluye"><use href="assets/img/icons.svg#x"></use></svg></td>
+                <td class="compare-table__pick">15 días</td>
+                <td>30 días</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="compare-table__note">Precios de ejemplo, no son una oferta. El precio real depende del auto, tu edad, tu código postal y la aseguradora.</p>
+
+        <ul class="explainers">
+          <li class="explainer">
+            <h3 class="explainer__title">Deducible</h3>
+            <p>Lo que pagas tú cuando usas el seguro. Un 5% de un auto de $450,000 son $22,500.</p>
+          </li>
+          <li class="explainer">
+            <h3 class="explainer__title">Coaseguro</h3>
+            <p>En gastos médicos, el porcentaje de la cuenta que te toca después del deducible, casi siempre con un tope.</p>
+          </li>
+          <li class="explainer">
+            <h3 class="explainer__title">Periodo de espera</h3>
+            <p>Tiempo que debe pasar desde que contratas para que te cubran ciertos padecimientos, como un parto o una hernia.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ASEGURADORAS ============ -->
+    <!-- Escribe los nombres; no pongas logotipos de las aseguradoras sin su permiso. -->
+    <section class="insurers" id="aseguradoras" aria-labelledby="aseguradoras-titulo">
+      <div class="container insurers__inner">
+        <h2 class="insurers__title" id="aseguradoras-titulo">Trabajo con 8 aseguradoras, no con una</h2>
+        <ul class="insurers__list">
+          <li>GNP Seguros</li>
+          <li>AXA</li>
+          <li>Qualitas</li>
+          <li>Chubb</li>
+          <li>Mapfre</li>
+          <li>HDI Seguros</li>
+          <li>Seguros Monterrey New York Life</li>
+          <li>MetLife</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SINIESTROS ============ -->
+    <!-- Pestañas con assets/js/modules/tabs.js. Sin JavaScript se ven los tres paneles seguidos. -->
+    <section class="section claims" id="siniestros" aria-labelledby="siniestros-titulo">
+      <div class="container claims__inner">
+        <div class="claims__intro">
+          <p class="eyebrow eyebrow--inverse">Siniestros</p>
+          <h2 class="section__title" id="siniestros-titulo">¿Tuviste un siniestro? Respira, aquí te digo qué hacer.</h2>
+          <p class="claims__lead">Primero reporta a la cabina de tu aseguradora (el número viene en tu póliza y en su app). Después llámame: te acompaño con el ajustador, en el hospital o en el taller.</p>
+          <div class="claims__actions">
+            <a class="button button--primary button--lg" href="tel:+528119345620" data-contact="phone">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#phone"></use></svg>
+              Llamar a Rodrigo
+            </a>
+            <a class="button button--on-dark button--lg" href="https://wa.me/528119345620?text=Hola%20Rodrigo%2C%20tuve%20un%20siniestro%20y%20necesito%20ayuda" data-contact="whatsapp" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#whatsapp"></use></svg>
+              Escribir por WhatsApp
+            </a>
+          </div>
+          <p class="claims__emergency">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#alert"></use></svg>
+            Si hay heridos, llama primero al 911.
+          </p>
+          <figure class="media claims__photo" data-slot="siniestro">
+            <img src="images/siniestro.jpg" alt="Rodrigo tomando fotos del golpe en la defensa del auto de una clienta, que se ve tranquila" width="1536" height="1024" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="claims__guide" data-tabs>
+          <div class="tabs claims__tabs" role="tablist" aria-label="Tipo de siniestro" hidden>
+            <button class="tabs__tab" type="button" role="tab" data-tab="auto">Choque o robo</button>
+            <button class="tabs__tab" type="button" role="tab" data-tab="salud">Hospital</button>
+            <button class="tabs__tab" type="button" role="tab" data-tab="casa">Daños en casa</button>
+          </div>
+
+          <article class="claim" data-tab-panel="auto">
+            <h3 class="claim__title"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#car"></use></svg> Choque o robo de auto</h3>
+            <ol class="claim__steps">
+              <li><strong>Ponte a salvo.</strong> Enciende las intermitentes y coloca los triángulos.</li>
+              <li><strong>Reporta a tu aseguradora</strong> con tu número de póliza y la ubicación exacta.</li>
+              <li><strong>No firmes ni aceptes culpas</strong> antes de que llegue el ajustador.</li>
+              <li><strong>Toma fotos</strong> del lugar, de los daños y de las placas del otro auto.</li>
+              <li><strong>Avísame.</strong> Reviso que el ajustador aplique bien tu cobertura y te sigo hasta que tu auto salga del taller.</li>
+            </ol>
+            <p class="claim__bring"><strong>Si te robaron el auto:</strong> denuncia ante el Ministerio Público y guarda la carpeta de investigación; yo te digo qué documentos pide tu aseguradora.</p>
+          </article>
+
+          <article class="claim" data-tab-panel="salud">
+            <h3 class="claim__title"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#stethoscope"></use></svg> Hospital o cirugía</h3>
+            <ol class="claim__steps">
+              <li><strong>Urgencia:</strong> ve a un hospital de la red de tu aseguradora y muestra tu credencial del seguro.</li>
+              <li><strong>Cirugía programada:</strong> avísame en cuanto te la indiquen, para tramitar el pago directo antes de internarte.</li>
+              <li><strong>Pide facturas a nombre del titular</strong> de la póliza, por si hay que pedir reembolso.</li>
+              <li><strong>Guarda el informe médico</strong> y los estudios: la aseguradora los va a pedir.</li>
+              <li><strong>Yo armo tu expediente</strong> y le doy seguimiento hasta que te paguen.</li>
+            </ol>
+            <p class="claim__bring"><strong>Ten a la mano:</strong> tu credencial del seguro, una identificación y el número de tu póliza.</p>
+          </article>
+
+          <article class="claim" data-tab-panel="casa">
+            <h3 class="claim__title"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#home"></use></svg> Daños en casa</h3>
+            <ol class="claim__steps">
+              <li><strong>Ponte a salvo</strong> y, si hay riesgo, cierra el gas y baja la pastilla de la luz.</li>
+              <li><strong>Toma fotos y video</strong> de todo antes de limpiar o reparar.</li>
+              <li><strong>Reporta a tu aseguradora</strong> lo antes posible.</li>
+              <li><strong>No tires lo dañado</strong> hasta que lo vea el ajustador.</li>
+              <li><strong>Avísame</strong> y te ayudo con el reclamo y las cotizaciones de reparación.</li>
+            </ol>
+            <p class="claim__bring"><strong>Si fue un robo:</strong> denuncia ante el Ministerio Público y junta las facturas o fotos de lo que te robaron.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RENOVACIÓN ============ -->
+    <section class="section" id="renovacion" aria-labelledby="renovacion-titulo">
+      <div class="container renewal">
+        <div class="renewal__intro">
+          <p class="eyebrow">Renovación</p>
+          <h2 class="section__title" id="renovacion-titulo">Que no se te pase la fecha de tu póliza</h2>
+          <p class="section__lead">Dime cuándo vence y te escribo un mes antes, con tu renovación y otras opciones para comparar. Aunque tu póliza no sea conmigo.</p>
+          <ul class="renewal__reasons">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#bell"></use></svg>
+              <span><strong>Una póliza vencida no cubre.</strong> Si chocas un día después, pagas tú.</span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#eye"></use></svg>
+              <span><strong>Renovar sin revisar sale caro.</strong> Tu auto vale menos cada año y el precio no siempre baja solo.</span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#file"></use></svg>
+              <span><strong>Te reviso tu póliza actual gratis</strong> y te digo si tiene huecos.</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="renewal__card form" data-whatsapp-form data-message="Hola Rodrigo, soy {nombre}. Quiero que me recuerdes la renovación de mi seguro de {poliza}.&#10;Aseguradora actual: {aseguradora}.&#10;Vence en {mes}.">
+          <h3 class="renewal__card-title">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#calendar"></use></svg>
+            Recuérdame mi renovación
+          </h3>
+          <div class="form__field">
+            <label class="form__label" for="renovacion-nombre">Tu nombre</label>
+            <input class="form__control" id="renovacion-nombre" name="nombre" type="text" autocomplete="name" required>
+          </div>
+          <div class="form__row">
+            <div class="form__field">
+              <label class="form__label" for="renovacion-poliza">Seguro de</label>
+              <select class="form__control" id="renovacion-poliza" name="poliza" required>
+                <option>auto</option>
+                <option>gastos médicos</option>
+                <option>vida</option>
+                <option>hogar</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="renovacion-mes">Vence en</label>
+              <select class="form__control" id="renovacion-mes" name="mes" required>
+                <option value="">Elige el mes</option>
+                <option>enero</option>
+                <option>febrero</option>
+                <option>marzo</option>
+                <option>abril</option>
+                <option>mayo</option>
+                <option>junio</option>
+                <option>julio</option>
+                <option>agosto</option>
+                <option>septiembre</option>
+                <option>octubre</option>
+                <option>noviembre</option>
+                <option>diciembre</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="renovacion-aseguradora">Aseguradora actual (opcional)</label>
+            <input class="form__control" id="renovacion-aseguradora" name="aseguradora" type="text" placeholder="Ej. GNP">
+          </div>
+          <button class="button button--whatsapp button--block" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#whatsapp"></use></svg>
+            Pedir mi recordatorio
+          </button>
+          <p class="form__note">Se abrirá WhatsApp con tu mensaje listo. El recordatorio te lo mando yo, personalmente.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="section section--muted" id="sobre-mi" aria-labelledby="sobre-mi-titulo">
+      <div class="container about">
+        <div class="about__photos">
+          <figure class="media media--portrait about__photo" data-slot="oficina">
+            <img src="images/oficina.jpg" alt="Rodrigo hablando por teléfono en su escritorio, con la ciudad de Monterrey detrás" width="1024" height="1536" loading="lazy">
+          </figure>
+          <figure class="media about__photo about__photo--small" data-slot="asesoria">
+            <img src="images/asesoria.jpg" alt="Rodrigo explicando una comparativa en su tableta a una pareja en el comedor de su casa" width="1536" height="1024" loading="lazy">
+          </figure>
+        </div>
+        <div class="about__content">
+          <p class="eyebrow">Sobre mí</p>
+          <h2 class="section__title" id="sobre-mi-titulo">Soy regio y llevo 15 años del lado del cliente</h2>
+          <p>Empecé como ajustador de autos y ahí vi lo que pasa cuando alguien compra un seguro sin entenderlo. En 2011 me hice agente independiente para hacerlo diferente: comparar, explicar y estar ahí cuando algo pasa.</p>
+          <p>Hoy cuido las pólizas de más de 900 familias y negocios de Nuevo León. Voy a tu casa u oficina, o lo vemos por videollamada.</p>
+          <dl class="credentials">
+            <div><dt>Cédula de agente</dt><dd>CNSF A-123456</dd></div>
+            <div><dt>Experiencia</dt><dd>15 años, 4 como ajustador</dd></div>
+            <div><dt>Especialidad</dt><dd>Autos y gastos médicos mayores</dd></div>
+            <div><dt>Atiendo en</dt><dd>Monterrey, San Pedro, San Nicolás, Guadalupe, Apodaca, Santa Catarina y Escobedo</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OPINIONES ============ -->
+    <section class="section" id="opiniones" aria-labelledby="opiniones-titulo">
+      <div class="container">
+        <header class="section__header reviews__header">
+          <div>
+            <p class="eyebrow">Opiniones</p>
+            <h2 class="section__title" id="opiniones-titulo">Lo que dicen cuando tuvieron que usar su seguro</h2>
+          </div>
+          <p class="reviews__score"><strong>4.9</strong> <span aria-hidden="true">★★★★★</span> <small>187 opiniones en Google</small></p>
+        </header>
+        <ul class="reviews">
+          <li class="review">
+            <blockquote>“Me chocaron en Constitución un domingo. Rodrigo me contestó en 5 minutos y habló con el ajustador por mí.”</blockquote>
+            <p class="review__author">Mariana L. · seguro de auto</p>
+          </li>
+          <li class="review">
+            <blockquote>“Tramitó el pago directo de la cirugía de mi papá antes de que lo internaran. No pusimos un peso de más.”</blockquote>
+            <p class="review__author">Jorge V. · gastos médicos mayores</p>
+          </li>
+          <li class="review">
+            <blockquote>“Me explicó la diferencia entre tres pólizas en 15 minutos. Pagué menos que en mi renovación y con más cobertura.”</blockquote>
+            <p class="review__author">Ana Sofía R. · seguro de auto y hogar</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS FRECUENTES ============ -->
+    <section class="section section--muted" id="preguntas" aria-labelledby="preguntas-titulo">
+      <div class="container container--narrow">
+        <header class="section__header">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2 class="section__title" id="preguntas-titulo">Lo que me preguntan antes de contratar</h2>
+        </header>
+        <div class="faq">
+          <details class="faq__item">
+            <summary class="faq__question">¿Cuánto cobras por cotizar o asesorar?</summary>
+            <p class="faq__answer">Nada. Mi comisión la paga la aseguradora y está incluida en el precio, igual que si contrataras directo con ella.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">¿Puedo pagar mi seguro mes a mes?</summary>
+            <p class="faq__answer">Sí. Puedes pagar anual, semestral, trimestral o mensual, con tarjeta o domiciliado. El pago anual casi siempre sale más barato.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">Ya tengo póliza con otro agente. ¿Me puedes atender?</summary>
+            <p class="faq__answer">Sí. Te reviso tu póliza sin costo y, si quieres, en la renovación la pasamos conmigo o a otra aseguradora sin perder antigüedad cuando aplica.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">¿Atiendes fuera de Monterrey?</summary>
+            <p class="faq__answer">En persona atiendo toda el área metropolitana. Por videollamada atiendo en todo México.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">¿Qué pasa si tengo un siniestro en fin de semana?</summary>
+            <p class="faq__answer">La cabina de tu aseguradora atiende las 24 horas. Repórtalo ahí primero y luego escríbeme: contesto siniestros también en fin de semana.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO Y HORARIO ============ -->
+    <section class="section" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="eyebrow">Contacto</p>
+          <h2 class="section__title" id="contacto-titulo">Voy a tu casa u oficina</h2>
+          <p class="contact__lead">O nos vemos en mi oficina en Valle Oriente. Para siniestros, llámame a cualquier hora.</p>
+
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#pin"></use></svg>
+              <span>Av. Lázaro Cárdenas 2400, piso 7, Valle Oriente, San Pedro Garza García, N.L.</span>
+            </li>
+            <li class="contact-list__item">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#phone"></use></svg>
+              <a href="tel:+528119345620" data-contact="phone">81 1934 5620</a>
+            </li>
+            <li class="contact-list__item">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#whatsapp"></use></svg>
+              <a href="https://wa.me/528119345620?text=Hola%20Rodrigo%2C%20quiero%20informes%20sobre%20un%20seguro" data-contact="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+            </li>
+            <li class="contact-list__item">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#mail"></use></svg>
+              <a href="mailto:rodrigo@garzaseguros.mx" data-contact="email">rodrigo@garzaseguros.mx</a>
+            </li>
+          </ul>
+
+          <!-- Horario: data-days usa 0 = domingo … 6 = sábado; horas en formato 24 h. -->
+          <h3 class="contact__subtitle">Horario de oficina</h3>
+          <table class="hours" data-hours>
+            <tbody>
+              <tr data-days="1,2,3,4,5" data-open="09:00" data-close="19:00">
+                <th scope="row">Lunes a viernes</th>
+                <td>9:00 a 19:00</td>
+              </tr>
+              <tr data-days="6" data-open="10:00" data-close="14:00">
+                <th scope="row">Sábado</th>
+                <td>10:00 a 14:00</td>
+              </tr>
+              <tr data-days="0">
+                <th scope="row">Domingo</th>
+                <td>Solo siniestros</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="contact__map">
+          <iframe
+            title="Ubicación de la oficina en el mapa"
+            src="https://www.google.com/maps?q=Av.+L%C3%A1zaro+C%C3%A1rdenas+2400+Valle+Oriente+San+Pedro+Garza+Garc%C3%ADa&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIE DE PÁGINA ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">Rodrigo Garza · Seguros</p>
+      <ul class="social-list">
+        <li><a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#facebook"></use></svg></a></li>
+        <li><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#instagram"></use></svg></a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#linkedin"></use></svg></a></li>
+      </ul>
+      <p>© <span data-current-year>2026</span> Rodrigo Garza Treviño · Agente de seguros, cédula CNSF A-123456</p>
+      <p class="site-footer__legal" id="aviso-de-privacidad">Las coberturas, precios y condiciones dependen de cada aseguradora y de lo que diga tu póliza. <strong>Aviso de privacidad:</strong> los datos que me envías por WhatsApp los uso solo para cotizar y atender tus seguros; no los comparto con terceros salvo con la aseguradora que elijas. Puedes pedir que los borre escribiéndome.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/528119345620?text=Hola%20Rodrigo%2C%20quiero%20cotizar%20un%20seguro" data-contact="whatsapp" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#whatsapp"></use></svg>
+  </a>
+</body>
+</html>

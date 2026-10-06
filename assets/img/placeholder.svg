@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" preserveAspectRatio="xMidYMid slice">
+  <!-- Imagen de relleno para los espacios de imagen; ver "Espacios de imagen" en AGENTS.md -->
+  <rect width="1200" height="1200" fill="#e9ebee"/>
+  <g transform="translate(600 600) scale(6) translate(-22 -22)" opacity=".3">
+    <path d="M22 8 33 12.5v8.2c0 7.1-4.7 12.6-11 15.3-6.3-2.7-11-8.2-11-15.3v-8.2z" fill="#c2410c"/>
+    <path d="m16.5 22 3.8 3.8 7.4-7.6" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

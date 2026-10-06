@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4f5f7"/>
+  <rect x="0" y="560" width="1200" height="70" fill="#1b1f24"/>
+  <g transform="translate(100 100) scale(2.6)">
+    <rect width="44" height="44" rx="8" fill="#1b1f24"/>
+    <path d="M22 8 33 12.5v8.2c0 7.1-4.7 12.6-11 15.3-6.3-2.7-11-8.2-11-15.3v-8.2z" fill="#c2410c"/>
+    <path d="m16.5 22 3.8 3.8 7.4-7.6" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="100" y="340" fill="#1b1f24" font-family="system-ui, sans-serif" font-weight="800" font-size="88">Rodrigo Garza</text>
+  <text x="104" y="420" fill="#c2410c" font-family="system-ui, sans-serif" font-weight="600" font-size="44">Asesor de seguros independiente · Monterrey</text>
+  <text x="104" y="608" fill="#ffffff" font-family="system-ui, sans-serif" font-size="30">Auto · Gastos médicos · Vida · Hogar · Cotiza por WhatsApp</text>
+</svg>

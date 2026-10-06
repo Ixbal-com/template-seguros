@@ -1,0 +1,121 @@
+/* Cotizador: explicación a la izquierda y formulario por pasos a la derecha. */
+.quote-section {
+  background: var(--color-surface);
+  border-block: var(--border-width) solid var(--color-border-strong);
+}
+
+.quote {
+  display: grid;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+@media (min-width: 60rem) {
+  .quote {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: var(--space-16);
+  }
+}
+
+.quote__steps {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  padding: 0;
+  list-style: none;
+  counter-reset: quote-step;
+}
+
+.quote__steps li {
+  position: relative;
+  padding-left: 3.25rem;
+  counter-increment: quote-step;
+}
+
+.quote__steps li::before {
+  content: counter(quote-step);
+  position: absolute;
+  top: -0.1rem;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-full);
+  background: var(--color-border-strong);
+  color: var(--color-on-inverse);
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+.quote__note {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-8);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.quote__note .icon {
+  flex: none;
+  color: var(--color-success);
+}
+
+.quote__card {
+  padding: var(--space-8);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  background: var(--color-background);
+  box-shadow: var(--shadow-hard);
+}
+
+@media (max-width: 30rem) {
+  .quote__card {
+    padding: var(--space-6) var(--space-4);
+  }
+}
+
+.quote__card .wizard__question {
+  font-weight: 800;
+}
+
+.quote__group {
+  display: grid;
+  gap: var(--space-4);
+}
+
+/* Opciones del paso 1 con ícono grande */
+.option--type {
+  font-weight: 700;
+  border-width: var(--border-width);
+}
+
+.option--type .icon {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+.option--type input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.option--type:has(input:focus-visible) {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.option--type:has(input:checked) {
+  border-color: var(--color-border-strong);
+  background: var(--color-border-strong);
+  color: var(--color-on-inverse);
+}
+
+.option--type:has(input:checked) .icon {
+  color: var(--color-accent);
+}
+
+.option--type {
+  position: relative;
+}

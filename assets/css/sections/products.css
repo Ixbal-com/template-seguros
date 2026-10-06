@@ -1,0 +1,91 @@
+/* Los cuatro seguros: tarjetas con foto, para quién, qué cubre y un "Ojo". */
+.products {
+  display: grid;
+  gap: var(--space-6);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 44rem) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 72rem) {
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+.product__photo {
+  --media-ratio: 3 / 2;
+  border-radius: 0;
+  border-bottom: var(--border-width) solid var(--color-border-strong);
+}
+
+.product__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+}
+
+.product__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xl);
+}
+
+.product__title .icon {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.product__for {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.product__list {
+  display: grid;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-sm);
+}
+
+.product__list li {
+  position: relative;
+  padding-left: var(--space-6);
+}
+
+.product__list li::before {
+  content: "";
+  position: absolute;
+  top: 0.45em;
+  left: 0;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 2px;
+  background: var(--color-primary);
+}
+
+.product__tip {
+  margin-top: auto;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--color-primary-soft);
+  font-size: var(--text-xs);
+}

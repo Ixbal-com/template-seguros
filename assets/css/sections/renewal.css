@@ -1,0 +1,64 @@
+/* Renovación: razones a la izquierda y formulario de recordatorio a la derecha. */
+.renewal {
+  display: grid;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+@media (min-width: 56rem) {
+  .renewal {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-16);
+  }
+}
+
+.renewal__reasons {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  padding: 0;
+  list-style: none;
+}
+
+.renewal__reasons li {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.renewal__reasons .icon {
+  font-size: 2rem;
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+.renewal__reasons strong {
+  display: block;
+}
+
+.renewal__card {
+  padding: var(--space-8);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-hard);
+}
+
+@media (max-width: 30rem) {
+  .renewal__card {
+    padding: var(--space-6) var(--space-4);
+  }
+}
+
+.renewal__card-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-xl);
+}
+
+.renewal__card-title .icon {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ixbal-template-seguros",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plantilla Ixbal para agentes y asesores de seguros independientes.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "npx --yes serve@14 . -l 4321",
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/check.mjs"
+  }
+}

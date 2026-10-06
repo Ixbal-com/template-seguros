@@ -1,0 +1,193 @@
+/* Hero: titular grande, accesos por tipo de seguro, retrato con la cédula y franja de cifras. */
+.hero {
+  padding-block: var(--space-12);
+  border-bottom: var(--border-width) solid var(--color-border-strong);
+}
+
+.hero__inner {
+  display: grid;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+@media (min-width: 56rem) {
+  .hero__inner {
+    grid-template-columns: 1.25fr 0.75fr;
+  }
+}
+
+.hero__title {
+  font-size: var(--text-3xl);
+}
+
+.hero__title span {
+  display: block;
+  color: var(--color-primary);
+}
+
+.hero__lead {
+  max-width: 38rem;
+  margin-top: var(--space-6);
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+}
+
+.hero__pick-label {
+  margin-top: var(--space-8);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero__picks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+
+.pick {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.pick .icon {
+  color: var(--color-primary);
+}
+
+.pick:hover {
+  background: var(--color-border-strong);
+  color: var(--color-on-inverse);
+}
+
+.pick:hover .icon {
+  color: var(--color-accent);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+.hero__visual {
+  position: relative;
+  width: min(100%, 26rem);
+  margin-inline: auto;
+}
+
+.hero__photo {
+  border: var(--border-width) solid var(--color-border-strong);
+  box-shadow: var(--shadow-hard);
+}
+
+/* Sello de la cédula encimado en la foto */
+.hero__license {
+  position: absolute;
+  left: calc(var(--space-4) * -1);
+  bottom: var(--space-8);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  max-width: 85%;
+  padding: var(--space-3) var(--space-4);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-size: var(--text-xs);
+  line-height: 1.35;
+}
+
+.hero__license strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+}
+
+.hero__license .icon {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+}
+
+@media (max-width: 30rem) {
+  .hero__license {
+    left: var(--space-3);
+  }
+}
+
+.hero__facts {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-12);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 40rem) {
+  .hero__facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero__facts {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.hero__facts li {
+  padding-top: var(--space-4);
+  border-top: var(--border-width) solid var(--color-border-strong);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.hero__facts strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.1rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--color-text);
+}
+
+/* "Te contesto ahora": lo muestra opening-hours.js según la tabla de #contacto */
+.status-badge {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding: var(--space-1) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.status-badge::before {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: var(--radius-full);
+  background: var(--color-accent);
+}
+
+.status-badge.is-open::before {
+  background: var(--color-success);
+}
